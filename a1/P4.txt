@@ -1,0 +1,8 @@
+We firstly use the base case 01 02 03 04 as our input and verify its correctness. Then we try several hex values which are positive.
+Also, we use ff ff ff ff as our input and verify that the output is -1 which is correct.
+Finally, several other negative hex values are tested which are all correct.
+
+Summary:
+-test positive bytes into an int(0x01 0x02 0x03 0x04)
+-test negative bytes into an int(0xff 0x80 0xff 0x80)
+-test bytes are positive and some are negative(0x12 0xff 0x13 0x80)

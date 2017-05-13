@@ -1,0 +1,23 @@
+Data:
+10:
+real	0m0.112s
+user	0m0.102s
+sys	0m0.004s
+
+100:
+real	0m1.090s
+user	0m0.987s
+sys	0m0.036s
+
+1000:
+real	0m10.844s
+user	0m10.006s
+sys	0m0.310s
+
+Observation:
+
+Base on the result above, the time of disk reading increase as the number of block increase.
+
+Explanation:
+
+Since “sum = sum * 1.1 + *(((int*) buf) + 1);” and “printf ("%ld\n", sum);”, the output is the total sum of disk reads. It derives from the given two codes, so the current sum is 1.1 times the previous sum plus the next number of disk reads. Therefore, the time taken for the execution increase as the sum increase.

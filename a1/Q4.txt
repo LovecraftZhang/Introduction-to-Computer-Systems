@@ -1,0 +1,3 @@
+521,829 = 0x0007F665;
+-2,207,359 = 0xFFDE5181;
+Since the computer on Hubble use a big endian, which differ from the little endian used in a i7 processor, we need to revert the byte. For example, 0x0007F665, which is 521,829, should be 0x65F60700 and 0xFFDE5181, which is -2,207,359 should be 0x8151DEFF.

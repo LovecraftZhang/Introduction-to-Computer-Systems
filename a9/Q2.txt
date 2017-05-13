@@ -1,0 +1,24 @@
+Data:
+
+10:
+real	0m0.014s
+user	0m0.010s
+sys	0m0.002s
+
+100:
+real	0m0.016s
+user	0m0.011s
+sys	0m0.002s
+
+1000:
+real	0m0.017s
+user	0m0.011s
+sys	0m0.003s
+
+Observations:
+
+The executing time increase slightly as the number of blocks increase.
+
+Explanation:
+
+The disk read is asynchronous which means CPU does not wait each single read finish. In this way, lots of time are saving. Therefore, asynchronously read is faster than synchronous read.

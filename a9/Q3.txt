@@ -1,0 +1,25 @@
+Data:
+
+10:
+real	0m0.016s
+user	0m0.004s
+sys	0m0.008s
+
+100:
+real	0m0.021s
+user	0m0.005s
+sys	0m0.013s
+
+1000:
+real	0m0.079s
+user	0m0.010s
+sys	0m0.065s
+
+
+Observation:
+
+The executing time is shorter that sRead but slightly longer than aRead.
+
+Explanation:
+
+That may because there are lots of threads created and this slows the program. Thread usually adds a small overhead, but if the number of threads is large, the overhead is significant. This overhead will take lots of stake space that slows the program.

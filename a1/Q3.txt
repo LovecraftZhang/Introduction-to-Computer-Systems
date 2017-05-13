@@ -1,0 +1,2 @@
+0x11111111;
+The difference between big endian and little endian is the order cpu read data from memory. Generally speaking, if the data stored in memory have no order(0x11111111, 0x12131312), or we say the data is “symmetric”, the big endian machine and little endian machine will have the same results. In another world, if data read from left have the same order as the data read from right(each time read 8 bits), the results from big endian machine and little endian machine will be the same.
